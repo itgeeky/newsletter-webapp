@@ -3,10 +3,10 @@
 const mailchimp = require("@mailchimp/mailchimp_marketing");
 //Requiring express and body parser and initializing the constant "app"
 const express = require("express");
-const bodyParser = require("body-parser");
 const app = express();
 //Using bod-parser
-app.use(bodyParser.urlencoded({extended:true}));
+app.use(express.json());
+app.use(express.urlencoded())
 //The public folder which holds the CSS
 app.use(express.static("public"));
 //Listening on port 3000 and if it goes well then logging a message saying that the server is running
