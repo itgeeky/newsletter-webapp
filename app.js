@@ -37,14 +37,18 @@ const subscribingUser = {
  email: email
 };
 //Uploading the data to the server
- async function run() {
-const response = await mailchimp.lists.addListMember(listId, {
- email_address: subscribingUser.email,
- status: "subscribed",
- merge_fields: {
- FNAME: subscribingUser.firstName,
- LNAME: subscribingUser.lastName
-}
+//  async function run() {
+// const response = await mailchimp.lists.addListMember(listId, {
+//  email_address: subscribingUser.email,
+//  status: "subscribed",
+//  merge_fields: {
+//  FNAME: subscribingUser.firstName,
+//  LNAME: subscribingUser.lastName
+// }
+const run = async () => {
+    const response = await client.lists.getList("list_id");
+    console.log(response);
+  };
 });
 //If all goes well logging the contact's id
  res.sendFile(__dirname + "/success.html")
