@@ -4,7 +4,7 @@
 
 Formulario de subscripcion a boletin de noticias realizada en bootstrap, con node js. Mostrando mensaje de error o de exito segun sea el caso
 
-Para el almacenamiento de los correos y datos ingresados se hace uso de la API de Mailchimp que es una herramienta de marketing. 
+Para el almacenamiento de los correos y datos ingresados se hace de la API de marketing Mailchimp. 
 
 ![image](https://user-images.githubusercontent.com/90287359/144522949-d01c5906-38be-4bae-94f6-28647309227a.png)
 
